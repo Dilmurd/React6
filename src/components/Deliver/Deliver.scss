@@ -1,0 +1,39 @@
+.ship{
+    margin-top: 115px;
+    .ship__top{
+        display: flex;
+        gap: 341px;
+        .ship__left{
+            .mains{
+                display: flex;
+                align-items: center;
+                p{
+                    font-size: 16px;
+                    color: #454545;
+                    font-weight: 600;
+                }
+            }
+            .desc{
+                font-size: 64px;
+                color: #454545;
+                font-weight: 700;
+            }
+        }
+        .ship__right{
+            .ship__main{
+                margin-bottom: 60px;
+                .ship__title{
+                    font-size: 24px;
+                    margin-bottom: 28px;
+                    font-weight: 600;
+                    color: #454545;
+                }
+                .ship__desc{
+                    max-width: 640px;
+                    font-size: 20px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

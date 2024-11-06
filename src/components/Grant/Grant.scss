@@ -1,0 +1,39 @@
+.grant{
+    margin-top: 60px;
+    .grant__wrapper{
+        display: flex;
+        gap: 341px;
+        .grant__left{
+            .mainfs{
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                .title{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #454545;
+                }
+            }
+            .inf{
+                font-size: 64px;
+                font-weight: 700;
+                color: #454545;
+            }
+        }
+        .grant__right{
+            .grant__title{
+                font-size: 24px;
+                font-weight: 600;
+                color: #000;
+                margin-bottom: 28px;
+            }
+            .grant__desc{
+                max-width: 450px;
+                height: 504px;
+                font-size: 20px;
+                color: #000;
+
+            }
+        }
+    }
+}

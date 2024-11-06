@@ -1,0 +1,25 @@
+.brand{
+    margin-top: 100px;
+    .brand__top{
+        p{
+            font-size: 40px;
+            font-weight: 700;
+            color: #454545;
+            margin-bottom:72px ;
+        }
+    }
+    .brand__wrapper{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        overflow: auto;
+        grid-gap: 20px;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+        .brand__card{
+            width: 310px;
+            padding: 20px 20px;
+            border: 1px solid #D9D9D9;
+        }
+    }
+}

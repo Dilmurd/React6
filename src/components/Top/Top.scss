@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    .navbar__collection{
+        flex: 1;
+        font-family: int;
+        color: #454545;
+        div{
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+    }
+    .contact{
+        display: flex;
+        gap: 24px;
+        p{
+            font-family: int;
+            color: #454545;
+        }
+    }
+}

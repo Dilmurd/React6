@@ -1,0 +1,71 @@
+.catalog{
+    margin-top: 97px;
+    .catalog__top{
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        .catalog__titles{
+            flex: 1;
+            p{
+                font-size: 40px;
+                font-weight: 700;
+                font-family: int;
+                color: #454545;
+            }
+        }
+        .btns{
+            display: flex;
+            align-items: center ;
+            width: 220px;
+            height: 50px;
+            border-radius: 100px;
+            border: 1px solid #454545;
+            padding: 14px 48px;
+            gap: 10px;
+            color: #454545;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                font-family: int;
+            }
+            svg{
+                font-size: 20px;
+            }
+        }
+    }
+    .catalog__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:20px ;
+        .catalog__card{
+            display: flex;
+            width: 420px;
+            height: 250px;
+            padding: 32px 35px;
+            border-radius: 20px;
+            background-color: #F2F2F2;
+            color: #454545;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+            div{
+                flex: 1;
+                position: relative;
+                p{
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-family: int;
+                }
+                .catalog__price{
+                    position: absolute;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+}

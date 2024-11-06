@@ -1,0 +1,36 @@
+.conact{
+    margin-top: 100px;
+    .contact__top{
+        display: flex;  
+        .contact__left{
+            flex: 1;
+            .main{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                color: #454545;
+            }
+            .title{
+                font-size: 64px;
+                color: #454545;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+        }
+        .contact__right{
+            display: flex;
+            flex-direction: column;
+            max-width: 209px;
+            .num{
+                margin-bottom: 10px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #454545;
+            }
+            .inf{
+                font-size: 16px;
+                color: #454545;
+            }
+        }
+    }
+}
