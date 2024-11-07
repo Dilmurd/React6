@@ -1,20 +1,27 @@
 .navbar{
     display: flex;
     align-items: center;
-    height: 30px;
+    height: auto;
     .navbar__collection{
         flex: 1;
-        font-family: int;
+        display: flex;
         color: #454545;
         div{
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             gap: 27px;
+            @media (max-width:800px) {
+                text-align: center;
+            }
         }
     }
     .contact{
         display: flex;
         gap: 24px;
+        @media (max-width:800px) {
+            display: none;
+        }
         p{
             font-family: int;
             color: #454545;

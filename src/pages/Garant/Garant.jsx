@@ -9,4 +9,4 @@ function Garant() {
   )
 }
 
-export default Garant
+export default React.memo(Garant) 

@@ -29,4 +29,4 @@ function Conacts() {
   )
 }
 
-export default Conacts
+export default React.memo(Conacts) 

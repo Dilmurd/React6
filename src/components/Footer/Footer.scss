@@ -2,18 +2,24 @@
     margin-top: 100px;
     width: 100%;
     background-color: #F2F2F2;
-    height: 543px;
     padding: 79px 0;
     .footer__wrapper{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width:1000px) {
+            flex-direction: column;
+            gap: 40px;
+        }
         .footer__logo{
             div{
                 display: flex;
                 align-items: center;
                 gap: 15px;
                 margin-bottom: 45px;
+                @media (max-width:1000px) {
+                    margin-bottom: 0;
+                }
                 p{
                     font-size: 40px;
                     font-weight: 500;
@@ -41,6 +47,9 @@
                     border-radius: 150px;
                     border: 1px solid #454545;
                     color: #454545;
+                    @media (max-width:1000px) {
+                        display: none;
+                    }
                 }
             }
         }

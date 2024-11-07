@@ -4,6 +4,9 @@
         display: flex;
         gap: 102px;
         align-items: center;
+        @media (max-width:1000px) {
+            flex-direction: column;
+        }
         .comp__first{
             div{
                 display: flex;
@@ -20,6 +23,9 @@
                 font-weight: 700;
                 font-family: int;
                 color: #454545;
+                @media (max-width:600px) {
+                    font-size: 28px;
+                }
             }
             .comp__wrapp{
                 display: grid;
@@ -32,6 +38,9 @@
                     position: relative;
                     padding: 32px 32px;
                     margin-top: 36px;
+                    @media (max-width:600px) {
+                        width: 400px;
+                    }
                     .comp__subtitle{
                         position: absolute;
                         top: 10px;
@@ -47,6 +56,9 @@
                         font-weight: 500;
                         font-family: int;
                         color: #454545;
+                        @media (max-width:600px) {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -57,11 +69,14 @@
             gap: 50px;
             max-width: 640px;
             div{
-                width: 650px;
                 p{
                     font-size: 24px;
                     font-weight: 500;
                     color: #454545;
+                    @media (max-width:700px) {
+                        font-size: 20px;
+                        text-align: center;
+                    }
                 }
             }
         }

@@ -27,9 +27,13 @@
         }
     }
     .blog__wrapper{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 20px;
+        display: flex;
+        gap: 20px;
+        @media (max-width:1000px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .blog__card{
             width: 420px;
             height: 456px;

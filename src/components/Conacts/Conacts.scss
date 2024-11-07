@@ -2,6 +2,13 @@
     margin-top: 100px;
     .contact__top{
         display: flex;  
+        @media (max-width:1000px) {
+            flex-direction: column;
+        }
+        @media (max-width:500px) {
+            align-items: center;
+            text-align: center;
+        }
         .contact__left{
             flex: 1;
             .main{
@@ -15,6 +22,9 @@
                 color: #454545;
                 font-weight: 700;
                 margin-top: 15px;
+                @media (max-width:1000px) {
+                    font-size: 40px;
+                }
             }
         }
         .contact__right{

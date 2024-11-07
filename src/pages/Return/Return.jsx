@@ -6,4 +6,4 @@ function Return() {
   )
 }
 
-export default Return
+export default React.memo(Return) 

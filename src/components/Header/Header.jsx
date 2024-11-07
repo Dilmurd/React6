@@ -19,10 +19,10 @@ function Header() {
                         <p>Каталог</p>
                     </div>
                 </div>
-                <div className="navbar__inp">
+                <form action="" className='navbar__inp'>
                     <input type="search" placeholder='Поиск по товарам' />
                     <FaSearch/>
-                </div>
+                </form>
                 <div className="navbar__icons">
                     <div>
                         <CiHeart/>
@@ -43,4 +43,4 @@ function Header() {
   )
 }
 
-export default Header
+export default React.memo(Header) 

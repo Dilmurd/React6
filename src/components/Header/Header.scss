@@ -3,42 +3,70 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
+    flex-wrap: wrap;
+    @media (max-width:700px) {
+        height: auto;
+        gap: 20px;
+    }
     .navbar__logo{
         display: flex;
         gap: 4px;
         align-items: center;
-    }
-    .cat{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        width: 150px;
-        height: 50px;
-        margin-left: 29px;
-        background-color: #454545;
-        border-radius: 100px;
-        padding: 14px 27px;
-        p{
-            font-size: 16px;
-            font-family: int;
-            color: #fff;
-            font-weight: 600;
+        @media (max-width:500px) {
+            display: flex;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 29px;
+            color: #454545;
+            @media (max-width:700px) {
+                display: flex;
+                flex: 1;
+                align-items: center;
+            }
+        }
+        .cat{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width: 150px;
+            height: 50px;
+            margin-left: 29px;
+            background-color: #454545;
+            border-radius: 100px;
+            padding: 14px 27px;
+            @media (max-width:500px) {
+                display: none;
+            }
+            p{
+                font-size: 16px;
+                font-family: int;
+                color: #fff;
+                font-weight: 600;
+            }
         }
     }
     .navbar__inp{
-        width: 640px;
-        border: 1px solid #454545;
+        display: flex;
+        flex: 1;
+        padding: 0 20px;
+        margin: 0 20px;
+        align-items: center;
         height: 50px;
         border-radius: 100px;
-        display: flex;
-        align-items: center;
+        gap: 10px;
+        border: 1px solid #454545;
+        @media (max-width:700px) {
+            margin: 0 0;
+        }
         input{
-            width: 95%;
-            outline: none;
+            display: flex;
+            border-radius: 100px;
             border: none;
-            padding: 0 20px;
-            font-size: 16px;
-            font-weight: 600;
+            outline: none;
+            flex: 1;
+            padding: 0 10px;
         }
         svg{
             font-size: 20px;
@@ -47,6 +75,9 @@
     .navbar__icons{
         display: flex;
         gap: 31px;
+        @media (max-width:950px) {
+            display: none;
+        }
         div{
             display: flex;
             flex-direction: column;

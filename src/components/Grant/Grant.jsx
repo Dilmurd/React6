@@ -44,4 +44,4 @@ function Grant() {
   );
 }
 
-export default Grant;
+export default React.memo(Grant) 
