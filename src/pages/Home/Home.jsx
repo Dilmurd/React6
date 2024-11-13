@@ -1,14 +1,14 @@
 import React from 'react'
 import Sale from '../../components/Sale/Sale'
 import Catalog from '../../components/Catalog/Catalog'
-import Menu from "../../components/Menu/Menu"
+import Products from '../../components/Products/Products'
 
 function Home() {
   return (
     <>
     <Sale/> 
     <Catalog/>
-    <Menu/>
+    <Products/>
     </>
   )
 }
