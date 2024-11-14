@@ -1,22 +1,32 @@
 import React from 'react'
 import {useFetch} from "../../hooks/useFetch"
 import "./Products.scss"
+import { useStateValue } from '../../context'
+import { FaRegHeart,FaHeart } from 'react-icons/fa'
 
-
-function Products() {
-        const {data} = useFetch("products")
+function Products({data}) {
+        const [state,dispatch] = useStateValue()
         
-        const items = data?.map((product) => (
-            <div key={product.id}  className='ok'>
+        const items = data?.map((pro) => (
+            <div key={pro.id}  className='ok'>
                 <div className='pro__card'>
-                    <img src={product.url} alt="" className='pro__img'/>    
+                    <img src={pro.url} alt="" className='pro__img'/>    
+                    <button onClick={()=> dispatch({type: "ADD_WISHLIST",payload: pro})}>
+                        {
+                            state.wishlist?.some(item => item.id === pro.id ) 
+                            ?
+                            <FaHeart/>
+                            :
+                            <FaRegHeart/>
+                        }
+                        </button>
                 </div>
                 <div className='pro__text'>
                     <div className='pro'>
-                        <h2 className='pro__title'>{product.title}</h2>
-                            <strong className='pro__price'>{product.price}</strong>
+                        <h2 className='pro__title'>{pro.title}</h2>
+                            <strong className='pro__price'>{pro.price}</strong>
                     </div>
-                            <p className='pro__desc'>{product.desc}</p>
+                            <p className='pro__desc'>{pro.desc}</p>
                     </div>
             </div>
         ))
@@ -34,4 +44,4 @@ function Products() {
   )
 }
 
-export default Products
+export default React.memo(Products) 
