@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import hero from "../../assets/hero.imgg.png"
 
 function Sale() {
@@ -21,9 +21,7 @@ function Sale() {
         pagination={{
             clickable: true,
         }}
-        navigation={true}
-        
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         >
         <SwiperSlide>
             <div className="hero__wrapper">

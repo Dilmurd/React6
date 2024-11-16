@@ -8,6 +8,7 @@ import Garant from '../pages/Garant/Garant'
 import Shipping from '../pages/Shipping/Shipping'
 import Wishlist from '../pages/Wishlist/Wishlist'
 import Layout from '../Layout/Layout'
+import Cart from '../pages/Cart/Cart'
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
         <Route path='/garant' element={<Garant/>}/>
         <Route path='/shipping' element={<Shipping/>}/>
         <Route path='/wishlist' element={<Wishlist/>}/>
+        <Route path='/cart' element={<Cart/>}/>
 
         </Route>
     </Routes>

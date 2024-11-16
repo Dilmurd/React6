@@ -1,0 +1,92 @@
+.cart{
+    .cart__title{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 40px;
+        margin-top: 20px;
+        font-weight: 700;
+        color: #454545;
+    }
+}
+
+    .cart__wrapper{
+        .cart{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 1200px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 39px 46px;
+            background-color: #f2f2f2;
+            .cart__img{
+                width: 80px;
+                height: 80px;
+                background-color: #fff;
+                border-radius: 10px;
+                img{
+                    width: 100%;
+                    padding: 10px 15px;
+                }
+            }
+            .inf{
+                margin-left: 36px;
+            .cart__inf{
+                font-size: 16px;
+                font-weight: 600;
+                color: #454545;
+                margin-bottom: 22px;
+            }
+            .cart__price{
+                font-size: 20px;
+                font-weight: 700;
+                color: #454545;
+            }
+        } 
+        .descs{
+            margin-left: 63px;
+            display: flex;
+            gap: 64px;
+            .cart__desc{
+                max-width: 250px;
+                font-size: 16px;
+                color: #454545;
+            }
+        }
+        .btns{
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin-left: 54px;
+            .btn{
+                font-size: 24px;
+                background-color: #f2f2f2;
+                border: none;      
+            }
+            .cart__amount{
+                padding: 19px 27px;
+                border: 1px solid #ddd;
+                font-size: 16px;
+                color: #454545;
+                border-radius: 10px;
+            }
+        }
+        .icon{
+            margin-left: 75px;
+            display: flex;
+            align-items: center;
+            button{
+                border: none;
+            }
+            svg{
+                font-size: 21px;
+                color: #454545;
+            }
+        }
+    }
+}
+.cart__image{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}

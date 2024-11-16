@@ -5,6 +5,7 @@ import cat from "../../assets/Vector (1).svg"
 import { FaSearch,FaSignal } from 'react-icons/fa'
 import { CiHeart } from "react-icons/ci";
 import { FiShoppingCart } from "react-icons/fi";
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -13,7 +14,7 @@ function Header() {
             <nav className='navbar__bt'>
                 <div className="navbar__logo">
                     <img src={logo} alt="" />
-                    <h1>NORNLIGHT</h1>
+                    <Link className='navbar__title' to={"/"}>NORNLIGHT</Link>
                     <div className='cat'>
                         <img src={cat} alt="" />
                         <p>Каталог</p>
@@ -25,16 +26,18 @@ function Header() {
                 </form>
                 <div className="navbar__icons">
                     <div>
-                        <CiHeart/>
-                        <p>Избранное</p>
+                        <Link className='link' to={"/wishlist"}><CiHeart className='hi'/></Link>
+                        <Link className='link2' to={"/wishlist"}>избранная</Link>
+
                     </div>
                     <div>
-                        <FaSignal/>
+                        <FaSignal className='hi'/>
                         <p>Сравнение</p>
                     </div>
                     <div>
-                        <FiShoppingCart/>
-                        <p>Корзина</p>
+                        <Link className='link' to={"/cart"}><FiShoppingCart className='hi'/></Link>
+                        <Link className='link2' to={"/cart"}>Корзина</Link>
+                        <p></p>
                     </div>
                 </div>
             </nav>
