@@ -17,17 +17,17 @@ function Cart() {
       </section>
       {state?.cart?.map((item) => (
         <div className="container">
-
           <div key={item.id} className="cart__wrapper">
             <div className="cart">
               <div className="cart__img">
               <img src={item.url} alt="" />
               </div>
-              <div className="inf">
+              <div className="descs">
+                <div>
+
                 <h3 className="cart__inf">{item.title}</h3>
                 <p className="cart__price">{item.price}</p>
-              </div>
-              <div className="descs">
+                </div>
                 <p className="cart__desc">
                   Светильник RADUGA COMBO XS Промышленное освещение; 50Вт; 230В;
                   S4; XS;
@@ -49,9 +49,9 @@ function Cart() {
                   >
                   +
                 </button>
+                <button onClick={()=> dispatch({type: "REMOVE_CART",payload: item})}><FaRegTrashAlt/></button>  
               </div>
               <div className="icon">
-                <button onClick={()=> dispatch({type: "REMOVE_CART",payload: item})}><FaRegTrashAlt/></button>  
               </div>
             </div>
           </div>
