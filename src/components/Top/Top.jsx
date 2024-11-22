@@ -16,6 +16,7 @@ function Header() {
                 <Link to={"/blog"}>Blog</Link>
                 <Link to={"/garant"}>Garant</Link>
                 <Link to={"/shipping"}>Shipping</Link>
+                <Link to={"/admin"}>Admin</Link>
               </div>
             </li>
           </ul>

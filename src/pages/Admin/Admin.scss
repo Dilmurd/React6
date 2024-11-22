@@ -1,0 +1,25 @@
+.admin{
+    display: flex;
+    .admin__wrapper{
+        width: 400px;
+        height: 200vh;
+        background-color: #454545;
+        .links{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 10px;
+            .adminn{
+                text-align: center;    
+                margin-bottom: 10px;
+                font-size: 28px;
+                color: #ffff;
+            }
+            .navlink{
+                color: #fff;
+                font-size: 18px;
+                padding: 0 31px;
+
+            }
+        }
+    }
+}

@@ -9,6 +9,9 @@ import Shipping from '../pages/Shipping/Shipping'
 import Wishlist from '../pages/Wishlist/Wishlist'
 import Layout from '../Layout/Layout'
 import Cart from '../pages/Cart/Cart'
+import Admin from '../pages/Admin/Admin'
+import CreateProduct from '../pages/Admin/create-product/CreateProduct'
+import ManageProduct from '../pages/Admin/manage-product/ManageProduct'
 
 function Router() {
   return (
@@ -26,6 +29,12 @@ function Router() {
         <Route path='/cart' element={<Cart/>}/>
 
         </Route>
+        <Route path='/admin' element={<Admin/>}>
+        <Route path='create-product' element={<CreateProduct/>}/>
+        <Route path='manage-product' element={<ManageProduct/>}/>
+        </Route>
+        <Route/>
+
     </Routes>
     </>
   )

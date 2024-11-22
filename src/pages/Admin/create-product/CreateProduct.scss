@@ -1,0 +1,40 @@
+.create{
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    h2{
+        font-size: 28px;
+        font-weight: 500;
+        color: #454545;
+        margin-top: 20px;
+        margin-bottom: 33px;
+    }
+    .inputs{
+        .input{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            gap: 8px;
+            .title{
+                font-size: 16px;
+                color: #4C4C4C;
+            }
+            .inp{
+                width: 600px;
+                height: 50px;
+                background-color: #F8F8F8;
+                border: none;
+                padding: 0 20px;
+            outline: none;
+        }
+    }
+    .btn{
+        padding: 13px 64px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        background-color: #454545;
+        border: none;
+    }
+}
+}
