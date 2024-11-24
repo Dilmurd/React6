@@ -40,7 +40,7 @@ const deleteProduct = (id)=>{
     .delete(`/products/${id}`)
     .then(res => {
       console.log(res)
-      window.location.reload()
+      dispatch({type: "RELOAD"})
 
     })
     .catch (res => console.log(res))

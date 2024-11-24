@@ -1,9 +1,10 @@
 .admin{
     display: flex;
+    height: 100vh;
     .admin__wrapper{
         width: 400px;
-        height: 200vh;
         background-color: #454545;
+        position: relative;
         .links{
             display: flex;
             flex-direction: column;
@@ -17,8 +18,19 @@
             .navlink{
                 color: #fff;
                 font-size: 18px;
-                padding: 0 31px;
-
+                padding: 0 10px;
+            }
+        }   
+        .btnss{
+            position: absolute;
+            bottom:40px;
+             .admin__btn{
+                padding: 10px 20px;
+                margin: 0 10px;
+                border-radius: 7px;
+                color: #fff;
+                background-color: #191919;
+                border: none;
             }
         }
     }

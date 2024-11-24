@@ -5,7 +5,7 @@ import cat from "../../assets/Vector (1).svg"
 import { FaSearch,FaSignal } from 'react-icons/fa'
 import { CiHeart } from "react-icons/ci";
 import { FiShoppingCart } from "react-icons/fi";
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
   return (
@@ -31,8 +31,10 @@ function Header() {
 
                     </div>
                     <div>
+                        <Link className='link' to={"/admin"}>
                         <FaSignal className='hi'/>
-                        <p>Сравнение</p>
+                        </Link>
+                        <Link className='link2' to={"/admin"}>Login</Link>
                     </div>
                     <div>
                         <Link className='link' to={"/cart"}><FiShoppingCart className='hi'/></Link>
