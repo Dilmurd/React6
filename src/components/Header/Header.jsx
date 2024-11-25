@@ -2,10 +2,11 @@ import React from 'react'
 import "./Header.scss"
 import logo from "../../assets/Vector.png"
 import cat from "../../assets/Vector (1).svg"
-import { FaSearch,FaSignal } from 'react-icons/fa'
+import { FaSearch } from 'react-icons/fa'
 import { CiHeart } from "react-icons/ci";
 import { FiShoppingCart } from "react-icons/fi";
 import { Link, NavLink } from 'react-router-dom'
+import { CiLock } from "react-icons/ci";
 
 function Header() {
   return (
@@ -32,7 +33,7 @@ function Header() {
                     </div>
                     <div>
                         <Link className='link' to={"/admin"}>
-                        <FaSignal className='hi'/>
+                        <CiLock className='hi'/>
                         </Link>
                         <Link className='link2' to={"/admin"}>Login</Link>
                     </div>
