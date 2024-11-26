@@ -14,14 +14,14 @@
                 p{
                     font-size: 16px;
                     font-weight: 500;
-                    font-family: int;
+                    font-family: man;
                     color: #454545;
                 }
             }
             .comp__title{
                 font-size: 64px;
                 font-weight: 700;
-                font-family: int;
+                font-family: man;
                 color: #454545;
                 @media (max-width:600px) {
                     font-size: 28px;
@@ -46,7 +46,7 @@
                         top: 10px;
                         font-size: 64px;
                         font-weight: 700;
-                        font-family: int;
+                        font-family: man;
                         color: #454545;
                     }
                     .comp__desc{
@@ -54,7 +54,7 @@
                         bottom: 20px;
                         font-size: 24px;
                         font-weight: 500;
-                        font-family: int;
+                        font-family: man;
                         color: #454545;
                         @media (max-width:600px) {
                             font-size: 16px;
@@ -73,6 +73,7 @@
                     font-size: 24px;
                     font-weight: 500;
                     color: #454545;
+                    font-family: man;
                     @media (max-width:700px) {
                         font-size: 20px;
                         text-align: center;

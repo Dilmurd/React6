@@ -29,7 +29,9 @@ function Login() {
         <h1>Login</h1>
         <input ref={username} type="text" placeholder="Username" />
         <input ref={password} type="password" placeholder="Password" />
-        <button>Login</button>
+        <button>
+          Login
+          </button>
       </form>
     </div>
   );

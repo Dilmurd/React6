@@ -6,6 +6,8 @@
         flex: 1;
         display: flex;
         color: #454545;
+        font-family: man;
+        font-weight: 600;
         div{
             display: flex;
             align-items: center;
@@ -23,7 +25,8 @@
             display: none;
         }
         p{
-            font-family: int;
+            font-family: man;
+            font-weight: 600;
             color: #454545;
         }
     }

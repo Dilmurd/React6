@@ -3,6 +3,8 @@ import Sale from '../../components/Sale/Sale'
 import Catalog from '../../components/Catalog/Catalog'
 import Products from '../../components/Products/Products'
 import { useFetch } from '../../hooks/useFetch'
+import Loading from '../../components/Loading/Loading'
+import "./Home.scss"
 
 function Home() {
   const {data} = useFetch("products")

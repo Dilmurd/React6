@@ -16,11 +16,14 @@
                 align-items: center;
                 gap: 12px;
                 color: #454545;
+                font-family: man;
+                font-weight: 600;
             }
             .title{
                 font-size: 64px;
                 color: #454545;
                 font-weight: 700;
+                font-family: man;
                 margin-top: 15px;
                 @media (max-width:1000px) {
                     font-size: 40px;
@@ -36,10 +39,11 @@
                 font-size: 24px;
                 font-weight: 600;
                 color: #454545;
+                font-family: man;
             }
             .inf{
-                font-size: 16px;
                 color: #454545;
+                font-family: man;
             }
         }
     }
