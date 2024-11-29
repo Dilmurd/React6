@@ -1,10 +1,10 @@
 import './App.scss'
-import Router from "./router"
+import Routerr from "./router/index"
 
 function App() {
   return (
     <>
-    <Router/>
+    <Routerr/>
     </>
   )
 }

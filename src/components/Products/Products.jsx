@@ -1,5 +1,4 @@
 import React from "react";
-import { useFetch } from "../../hooks/useFetch";
 import "./Products.scss";
 import { useStateValue } from "../../context";
 import { useState } from "react";
@@ -18,7 +17,6 @@ function Products({ data, admin, loading }) {
     axios
       .delete(`/products/${id}`)
       .then((res) => {
-        console.log(res);
         dispatch({ type: "RELOAD" });
       })
       .catch((res) => console.log(res));
